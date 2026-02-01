@@ -1,0 +1,13 @@
+{
+  "name": "blog-preview-card-main",
+  "version": "1.0.0",
+  "description": "Personal implementation of Frontend Master's Blog preview card",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Frontend Mater", "Blog Preview Card"],
+  "author": "Francis Judge <fjudge7@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.27.0"
+}
