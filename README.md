@@ -33,8 +33,8 @@ Mobile view of the card.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/FJSolutions/fm-blog-preview-card
+- Live Site URL: https://fjsolutions.github.io/fm-blog-preview-card/
 
 ## My process
 
@@ -56,7 +56,7 @@ Mobile view of the card.
   align-items: anchor-center;
 }
 ```
-This property gives better text alignment next to an image than `center`.
+This property gives better text alignment in flex-box when an image is next to an image than `center`.
 
 ### Continued development
 
