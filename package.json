@@ -2,12 +2,22 @@
   "name": "blog-preview-card-main",
   "version": "1.0.0",
   "description": "Personal implementation of Frontend Master's Blog preview card",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css": "postcss ./src/styles/main.pcss -o ./styles/main.css",
+    "serve": "live-server --port=3210"
   },
-  "keywords": ["Frontend Mater", "Blog Preview Card"],
+  "keywords": [
+    "Frontend Mater",
+    "Blog Preview Card"
+  ],
   "author": "Francis Judge <fjudge7@gmail.com>",
   "license": "MIT",
-  "packageManager": "pnpm@10.27.0"
+  "packageManager": "pnpm@10.27.0",
+  "devDependencies": {
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-nesting": "^14.0.0"
+  }
 }

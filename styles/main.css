@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Figtree;
+    src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    box-sizing: border-box;
+
+    --colour-yellow: hsl(47, 88%, 63%);
+    --colour-white: hsl(0, 0%, 100%);
+    --colour-gray-500: hsl(0, 0%, 42%);
+    --colour-gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Figtree, sans-serif;
+
+    background-color: var(--colour-yellow);
+    font-size: 16px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.container .card {
+        max-width: 310px;
+        margin: 1.5em;
+        padding: 1.5em;
+        background-color: var(--colour-white);
+        border: 1px solid var(--colour-gray-950);
+        border-radius: 1em;
+        box-shadow: 0.5em 0.5em var(--colour-gray-950);
+    }
+
+:is(.container .card) img {
+            width: 100%;
+            height: 100%;
+            border-radius: 1em;
+            margin-bottom: 0.5em;
+        }
+
+:is(.container .card) .tags {
+            margin: 1.5em 0;
+        }
+
+:is(:is(.container .card) .tags) .tag {
+                background-color: var(--colour-yellow);
+                padding: 0.5em;
+                border-radius: 0.3em;
+                display: inline;
+                font-weight: bold;
+            }
+
+:is(.container .card) .date {
+            font-size: 0.8em;
+        }
+
+:is(.container .card) h1 {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+:is(.container .card) h1:hover {
+            color: var(--colour-yellow);
+            cursor: pointer;
+        }
+
+:is(.container .card) h1:focus {
+            color: var(--colour-yellow);
+        }
+
+:is(.container .card) .blurb {
+            font-size: 0.9em;
+            margin-bottom: 1.7em;
+            line-height: 1.5em;
+        }
+
+:is(.container .card) .author {
+            display: flex;
+            align-items: anchor-center;
+        }
+
+:is(:is(.container .card) .author) img {
+                width: 2.3em;
+                margin: 0 0.7em 0 0;
+                padding: 0;
+            }
+
+:is(:is(.container .card) .author) p {
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+                font-size: 0.9em;
+            }

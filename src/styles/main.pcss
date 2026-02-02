@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Figtree;
+    src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    box-sizing: border-box;
+
+    --colour-yellow: hsl(47, 88%, 63%);
+    --colour-white: hsl(0, 0%, 100%);
+    --colour-gray-500: hsl(0, 0%, 42%);
+    --colour-gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Figtree, sans-serif;
+
+    background-color: var(--colour-yellow);
+    font-size: 16px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .card {
+        max-width: 310px;
+        margin: 1.5em;
+        padding: 1.5em;
+        background-color: var(--colour-white);
+        border: 1px solid var(--colour-gray-950);
+        border-radius: 1em;
+        box-shadow: 0.5em 0.5em var(--colour-gray-950);
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        .tags {
+            margin: 1.5em 0;
+
+            .tag {
+                background-color: var(--colour-yellow);
+                padding: 0.5em;
+                border-radius: 0.3em;
+                display: inline;
+                font-weight: bold;
+            }
+        }
+
+        .date {
+            font-size: 0.8em;
+        }
+
+        h1 {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        h1:hover {
+            color: var(--colour-yellow);
+            cursor: pointer;
+        }
+
+        h1:focus {
+            color: var(--colour-yellow);
+        }
+
+        .blurb {
+            font-size: 0.9em;
+            margin-bottom: 1.7em;
+            line-height: 1.5em;
+        }
+
+        .author {
+            display: flex;
+            align-items: anchor-center;
+
+            img {
+                width: 2.3em;
+                margin: 0 0.7em 0 0;
+                padding: 0;
+            }
+
+            p {
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+                font-size: 0.9em;
+            }
+        }
+    }
+}
